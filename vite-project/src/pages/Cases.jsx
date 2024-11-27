@@ -6,25 +6,28 @@ const cases = [
     name: 'Funda 1',
     description: 'Descripción de la Funda 1',
     image: '/img/f1.jpg',
+    price: 150
   },
   {
     name: 'Funda 2',
     description: 'Descripción de la Funda 2',
     image: '/img/f1.jpg',
+    price: 250
   },
   {
     name: 'Funda 3',
     description: 'Descripción de la Funda 3',
     image: '/img/f1.jpg',
+    price: 350
   },
-  // Añade más fundas según sea necesario
+
 ];
 
-function Cases() {
+function Cases({ addToCart }) {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-      {cases.map((item, index) => (
-        <ProductCard key={index} product={item} />
+      {cases.map((product, index) => (
+        <ProductCard key={index} product={product} addToCart={addToCart} />
       ))}
     </div>
   );

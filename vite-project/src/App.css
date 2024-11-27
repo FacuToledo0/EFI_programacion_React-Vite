@@ -1,9 +1,14 @@
-
+body {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 .navbar {
@@ -13,6 +18,13 @@
   transform: translateX(-50%);
   width: 100%;
   z-index: 1000;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: aliceblue;
+}
+
+.items{
+  color: aliceblue;
 }
 
 .logo {
@@ -23,11 +35,11 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #f7f7faaa);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #ffffffaa);
 }
 
 @keyframes logo-spin {
@@ -61,8 +73,9 @@
   transform: translateX(-50%);
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #f8f9fa;
+  color: white;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 
@@ -74,6 +87,8 @@
 main {
   margin-top: 60px; /* Ajusta el margen superior según la altura de tu navbar */
   padding-bottom: 60px; /* Ajusta el margen inferior según la altura de tu footer */
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 .cart-icon {
@@ -82,4 +97,35 @@ main {
 
 .me-auto{
   padding-left: 33%;
+}
+
+.navbar-custom {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff; /* Cambia el color de las fuentes de los enlaces de navegación */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #8f1150; /* Cambia el color al pasar el ratón por encima */
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff; /* Cambia el color de la marca */
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #8f1150; /* Cambia el color al pasar el ratón por encima */
+}
+
+.navbar-custom .btn-primary {
+  background-color: #80104d; /* Cambia el color del botón */
+  border-color: #80104d; /* Cambia el color del borde del botón */
+}
+
+.navbar-custom .btn-primary:hover {
+  background-color: #8f1150; /* Cambia el color del botón al pasar el ratón por encima */
+  border-color: #8f1150; /* Cambia el color del borde del botón al pasar el ratón por encima */
 }

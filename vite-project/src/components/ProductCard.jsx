@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function ProductCard({ product }) {
+function ProductCard({ product, addToCart }) {
   return (
     <Card style={{ width: '18rem', margin: '10px' }}>
       <Card.Img variant="top" src={product.image} />
@@ -12,7 +12,10 @@ function ProductCard({ product }) {
         <Card.Text>
           {product.description}
         </Card.Text>
-        <Button variant="primary">Agregar al Carrito</Button>
+        <Card.Text>
+          <strong>Precio: ${product.price}</strong>
+        </Card.Text>
+        <Button variant="primary" onClick={() => addToCart(product)}>Agregar al Carrito</Button>
       </Card.Body>
     </Card>
   );

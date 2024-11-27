@@ -7,8 +7,5 @@ export default defineConfig({
     mimeTypes: {
       'application/javascript': ['js', 'jsx'],
     },
-    hmr: {
-      overlay: false, 
-    },
   },
 });
